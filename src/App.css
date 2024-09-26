@@ -1,38 +1,65 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1 {
   text-align: center;
+  margin: 20px 0;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin: 50px auto; /* Added margin to push content down */
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  margin: 5px;
+  padding: 15px 27px; /* زيادة حجم الحشو */
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 18px; /* زيادة حجم الخط */
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.product {
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 0;
+}
+
+.product:last-child {
+  border-bottom: none;
+}
+
+.product h2 {
+  margin: 0 0 5px;
+  color: #007bff; /* Change product title color */
+}
+
+.product p {
+  margin: 5px 0;
+  color: #555; /* Change product text color */
+}
+
+.product:hover {
+  background-color: #f9f9f9; /* Highlight on hover */
+  transition: background-color 0.3s;
 }
